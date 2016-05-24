@@ -1,0 +1,382 @@
+; hpStack Configuration Editor; Created on release #KA.15.16.0006
+; Ver #06:7c.fd.ff.ff.3f.ef:57
+
+stacking
+   member 1 type "J9574A" mac-address 5065f3-b3d240
+   member 1 priority 250
+   member 2 type "J9574A" mac-address 5cb901-261700
+   member 2 priority 200
+   exit
+hostname "E3800-6F-Stack"
+console idle-timeout 600
+console idle-timeout serial-usb 600
+trunk 1/49-1/52,2/49-2/52 trk6 lacp
+timesync sntp
+sntp unicast
+sntp 300
+sntp server priority 1 10.0.0.5
+sntp server priority 2 10.0.101.2
+no telnet-server
+time daylight-time-rule continental-us-and-canada
+time timezone -480
+ip route 0.0.0.0 0.0.0.0 10.0.0.254
+ip route 10.10.100.0 255.255.255.0 10.10.100.1
+ip routing
+interface 1/1
+   name "A07"
+   exit
+interface 1/2
+   name "A31"
+   exit
+interface 1/3
+   name "A08"
+   exit
+interface 1/4
+   name "A32"
+   exit
+interface 1/5
+   name "A09"
+   exit
+interface 1/6
+   name "A33"
+   exit
+interface 1/7
+   name "A10"
+   exit
+interface 1/8
+   name "A34"
+   exit
+interface 1/9
+   name "A11"
+   exit
+interface 1/10
+   name "A35"
+   exit
+interface 1/11
+   name "A12"
+   exit
+interface 1/12
+   name "A36"
+   exit
+interface 1/13
+   name "A01"
+   power-over-ethernet high
+   exit
+interface 1/14
+   name "A25-AH7"
+   exit
+interface 1/15
+   name "A02"
+   exit
+interface 1/16
+   name "A26-DCLPrint"
+   exit
+interface 1/17
+   name "A03"
+   exit
+interface 1/18
+   name "A27-HighTable"
+   exit
+interface 1/19
+   name "A04"
+   exit
+interface 1/20
+   name "A28-HighTable"
+   exit
+interface 1/21
+   name "A05"
+   exit
+interface 1/22
+   name "A29"
+   exit
+interface 1/23
+   name "A06"
+   exit
+interface 1/24
+   name "A30"
+   exit
+interface 1/25
+   name "A19"
+   exit
+interface 1/26
+   name "A43"
+   exit
+interface 1/27
+   name "A20"
+   exit
+interface 1/28
+   name "A44"
+   exit
+interface 1/29
+   name "A21"
+   exit
+interface 1/30
+   name "A45"
+   exit
+interface 1/31
+   name "A22"
+   exit
+interface 1/32
+   name "A46"
+   exit
+interface 1/33
+   name "A23"
+   exit
+interface 1/34
+   name "A47"
+   exit
+interface 1/35
+   name "A24"
+   exit
+interface 1/36
+   name "A48"
+   exit
+interface 1/37
+   name "A13"
+   exit
+interface 1/38
+   name "A37"
+   exit
+interface 1/39
+   name "A14"
+   exit
+interface 1/40
+   name "A38"
+   exit
+interface 1/41
+   name "A15"
+   exit
+interface 1/42
+   name "A39"
+   exit
+interface 1/43
+   name "A16"
+   exit
+interface 1/44
+   name "A40"
+   exit
+interface 1/45
+   name "A17"
+   exit
+interface 1/46
+   name "A41-AH6"
+   exit
+interface 1/47
+   name "A18"
+   exit
+interface 1/48
+   name "A42"
+   exit
+interface 2/1
+   name "B07"
+   exit
+interface 2/2
+   name "B31"
+   exit
+interface 2/3
+   name "B08"
+   exit
+interface 2/4
+   name "B32"
+   exit
+interface 2/5
+   name "B09"
+   exit
+interface 2/6
+   name "B33"
+   exit
+interface 2/7
+   name "B10"
+   exit
+interface 2/8
+   name "B34-AH5"
+   exit
+interface 2/9
+   name "B11"
+   exit
+interface 2/10
+   name "B35"
+   exit
+interface 2/11
+   name "B12"
+   exit
+interface 2/12
+   name "B36"
+   exit
+interface 2/13
+   name "B01"
+   exit
+interface 2/14
+   name "B25-AH4"
+   exit
+interface 2/15
+   name "B02"
+   exit
+interface 2/16
+   name "B26"
+   exit
+interface 2/17
+   name "B03"
+   exit
+interface 2/18
+   name "B27"
+   exit
+interface 2/19
+   name "B04"
+   exit
+interface 2/20
+   name "B28"
+   exit
+interface 2/21
+   name "B05"
+   exit
+interface 2/22
+   name "B29"
+   exit
+interface 2/23
+   name "B06"
+   exit
+interface 2/24
+   name "B30"
+   exit
+interface 2/25
+   name "B19"
+   exit
+interface 2/26
+   name "B43"
+   exit
+interface 2/27
+   name "B20"
+   exit
+interface 2/28
+   name "B44"
+   exit
+interface 2/29
+   name "B21"
+   exit
+interface 2/30
+   name "B45"
+   exit
+interface 2/31
+   name "B22"
+   exit
+interface 2/32
+   name "B46"
+   exit
+interface 2/33
+   name "B23"
+   exit
+interface 2/34
+   name "B47-CAM1"
+   exit
+interface 2/35
+   name "B24"
+   exit
+interface 2/36
+   name "B48-CAM2"
+   exit
+interface 2/37
+   name "B13"
+   exit
+interface 2/38
+   name "B37"
+   exit
+interface 2/39
+   name "B14"
+   exit
+interface 2/40
+   name "B38"
+   exit
+interface 2/41
+   name "B15"
+   exit
+interface 2/42
+   name "B39"
+   exit
+interface 2/43
+   name "B16"
+   exit
+interface 2/44
+   name "B40-AHx"
+   exit
+interface 2/45
+   name "B17"
+   exit
+interface 2/46
+   name "B41"
+   exit
+interface 2/47
+   name "B18"
+   exit
+interface 2/48
+   name "B42"
+   exit
+snmp-server community "Acc3$$" operator
+snmp-server host 10.0.5.155 community "Acc3$$"
+snmp-server contact "infrastructure@deepcovelabs.com" location "Vancouver"
+oobm
+   no ip address
+   member 1
+      ip address dhcp-bootp
+      exit
+   member 2
+      ip address dhcp-bootp
+      exit
+   exit
+vlan 1
+   name "DEFAULT_VLAN"
+   no untagged 1/1,1/5,1/9,1/17-1/18,1/20,1/25,1/29,1/33,1/37,1/41,1/45,2/34,2/36
+   untagged 1/2-1/4,1/6-1/8,1/10-1/16,1/19,1/21-1/24,1/26-1/28,1/30-1/32,1/34-1/36,1/38-1/40,1/42-1/44,1/46-1/48,2/1-2/33,2/35,2/37-2/48,Trk6
+   ip address 10.0.0.246 255.255.255.0
+   exit
+vlan 5
+   name "Management"
+   tagged Trk6
+   ip address 10.0.5.246 255.255.255.0
+   exit
+vlan 20
+   name "Voice"
+   untagged 1/17
+   tagged 1/1-1/16,1/18-1/48,2/1-2/48,Trk6
+   ip address 10.0.20.246 255.255.255.0
+   ip helper-address 10.0.10.31
+   qos dscp 101110
+   voice
+   exit
+vlan 24
+   name "CAM-6th"
+   untagged 2/34,2/36
+   tagged Trk6
+   no ip address
+   exit
+vlan 26
+   name "WLAN-Private"
+   tagged 1/14,1/46,2/8,2/14,2/44,Trk6
+   no ip address
+   exit
+vlan 27
+   name "WLAN-Guests"
+   untagged 1/18,1/20
+   tagged 1/14,1/46,2/8,2/14,2/44,Trk6
+   no ip address
+   exit
+vlan 28
+   name "WLAN-DCL"
+   untagged 1/1,1/5,1/9,1/25,1/29,1/33,1/37,1/41,1/45
+   tagged 1/14,1/46,2/8,2/14,2/44,Trk6
+   ip address 10.10.10.246 255.255.255.0
+   ip helper-address 10.10.10.2
+   exit
+vlan 30
+   name "CiscoLab"
+   tagged 1/14,Trk6
+   ip address 10.10.100.6 255.255.255.0
+   exit
+spanning-tree Trk6 priority 4
+no tftp server
+no autorun
+no dhcp config-file-update
+no dhcp image-file-update
+password manager
+password operator
+
