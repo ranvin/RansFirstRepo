@@ -9,6 +9,7 @@ stacking
 hostname "E3800-4F-Stack"
 console idle-timeout 600
 change#1(desktop)
+change#2 (web)
 console idle-timeout serial-usb 600
 trunk 1/52,3/52 trk4 lacp
 banner motd "*********************************************************************\n* This device is privately-owned and offers no public services.     *\n* Unauthorised access prohibited.  Attempts to circumvent, disable, *\n* or otherwise interfere with normal operation will be prosecuted   *\n* to the fullest extent of applicable laws.                         *\n*********************************************************************\n"
